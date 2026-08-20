@@ -2,7 +2,7 @@ import { useState } from 'react';
 import LinkCard from './components/LinkCard';
 import PixModal from './components/PixModal';
 import { pageConfig } from './config';
-import brasao from './images/brasao.png';
+import brasao from './Images/brasao.png';
 
 function App() {
   const [isPixModalOpen, setIsPixModalOpen] = useState(false);
