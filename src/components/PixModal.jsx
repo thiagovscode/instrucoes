@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { X, Copy, Check } from 'lucide-react';
 
-export default function PixModal({ isOpen, onClose, pixKey }) {
+export default function PixModal({ isOpen, onClose, pixKey, pixQrCode }) {
   const [copied, setCopied] = useState(false);
 
   if (!isOpen) return null;
@@ -15,6 +15,9 @@ export default function PixModal({ isOpen, onClose, pixKey }) {
       console.error('Falha ao copiar', err);
     }
   };
+  
+  // Se o usuário forneceu uma imagem no config, usa ela. Senão, gera um QR Code genérico.
+  const qrCodeSrc = pixQrCode ? pixQrCode : `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${pixKey}`;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-wedding-bg/90 backdrop-blur-sm animate-in fade-in duration-200" onClick={onClose}>
@@ -34,9 +37,8 @@ export default function PixModal({ isOpen, onClose, pixKey }) {
           <p className="text-sm text-gray-500 mb-6">Escaneie o QR Code ou copie a chave abaixo</p>
 
           <div className="bg-wedding-bg p-4 rounded-xl inline-block mb-6">
-            {/* Placeholder for QR Code */}
             <img 
-              src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${pixKey}`} 
+              src={qrCodeSrc} 
               alt="QR Code Pix" 
               className="rounded-lg w-36 h-36 mx-auto mix-blend-multiply"
             />

@@ -1,8 +1,8 @@
 export const pageConfig = {
   overline: "Nosso Casamento",
-  title: "O & A",
-  date: "20.12.2026",
-  pixKey: "000.000.000-00",
+  title: "T & T ",
+  date: "24.01.2027",
+  pixKey: "00020126580014BR.GOV.BCB.PIX013684df263e-d99a-422e-8686-f7e5080251a55204000053039865802BR5925Thiago Santos de Vasconce6009SAO PAULO62140510PvRDdMNad36304723E",
   footerText: "Feito com ♥ para o nosso grande dia",
   
   cta: {
@@ -10,7 +10,7 @@ export const pageConfig = {
     title: "Confirmar Presença",
     description: "Sua presença é muito importante para nós. Por favor, confirme até o dia 10 de Novembro.",
     buttonText: "Confirmar agora",
-    url: "https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20confirmar%20minha%20presença%20no%20casamento.",
+    url: "https://wa.me/5511977496823?text=Olá!%20Gostaria%20de%20confirmar%20minha%20presença%20no%20casamento.",
     image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=80",
     tag: "RSVP"
   },
@@ -20,7 +20,7 @@ export const pageConfig = {
       id: "como-chegar",
       title: "Como Chegar",
       description: "Endereço e rotas para o local do casamento.",
-      url: "https://maps.google.com",
+      url: "https://maps.google.com/?q=Espa%C3%A7o+Balboa+Mairipora+SP",
       image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80",
       tag: "LOCAL",
       type: "external"
@@ -37,7 +37,7 @@ export const pageConfig = {
       id: "lista-amazon",
       title: "Lista Amazon",
       description: "Nossa lista de presentes selecionados na Amazon.",
-      url: "https://amazon.com.br",
+      url: "https://www.amazon.com.br/hz/wishlist/ls/M9WM0ECW56XX?ref_=wl_share",
       image: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80",
       tag: "PRESENTES",
       type: "external"
@@ -46,7 +46,7 @@ export const pageConfig = {
       id: "lista-divertida",
       title: "Lista Divertida",
       description: "Cotas para lua de mel e experiências incríveis.",
-      url: "#",
+      url: "https://noivos.casar.com/tainara-thiago#/presentes",
       image: "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=800&q=80",
       tag: "DIVERSÃO",
       type: "external"

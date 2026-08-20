@@ -95,6 +95,7 @@ function App() {
         isOpen={isPixModalOpen} 
         onClose={() => setIsPixModalOpen(false)} 
         pixKey={pageConfig.pixKey} 
+        pixQrCode={pageConfig.pixQrCode}
       />
     </div>
   );
